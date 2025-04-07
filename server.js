@@ -35,7 +35,7 @@ app.post('/login', (req, res) => {
 
 app.get('/dashboard', (req, res) => {
     if (req.session.loggedIn) {
-        res.redirect('https://17d5-103-134-129-31.ngrok-free.app'); // Change if your Node-RED runs on different URL
+        res.redirect('https://192.168.0.200/node-red/ui/#!/1?socketid=bLUvnrH7U2iuv9gKAAAC'); // Change if your Node-RED runs on different URL
     } else {
         res.redirect('/');
     }
